@@ -34,7 +34,7 @@ if (true) {
 console.log(x);
 console.log(y);
 
-// Variable
+// Variable Hoisting
 // Example 1
 console.log(x === undefined); // true
 var x = 3;
@@ -47,3 +47,23 @@ console.log(myvar); // logs 'my value'
   console.log(myvar); // undefined
   var myvar = 'local value';
 })();
+
+// Constants
+const PI = 3.14;
+
+/* constants cannot be declared with the same name as a function or
+   a variable.
+*/
+function f() {};
+const f = 5; // SyntaxError: Identifier 'f' has already been declared
+
+function f () {
+  const g = 5;
+  var g; SyntaxError: Identifier 'g' has already been declared
+};
+
+// Object attributes are not protected, so the following will work
+const MY_OBJECT = {'name': 'Kieha'};
+console.log(MY_OBJECT);
+MY_OBJECT.name = 'Njerry'
+console.log(MY_OBJECT); // he value changes to 'Njerry'
