@@ -11,3 +11,15 @@ console.log(42 + ' is the answer'); // logs '42 is the answer'
 */
 console.log('37' - 7); // logs the number 30
 console.log('37' + 7); // logs the string '377'
+
+// Converting Strings to Numbers
+// using parseInt(), but this only returns whole numbers
+console.log(parseInt('37') + 7); // logs the number 44
+console.log(parseInt('37.5') + 7); // logs the number 44
+
+// using parseFloat(), supports decimals
+console.log(parseFloat('37.5') + 7); // logs the number 44.5
+
+// using the unary plus (+) operator
+console.log('1.1' + '1.1'); // logs the string '1.11.1'
+console.log(+'1.1' + +'1.1'); // logs the number 2.2
