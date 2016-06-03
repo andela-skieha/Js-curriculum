@@ -43,3 +43,14 @@ console.log(cars); // { '7': 'mazda', manyCars: { a: 'Saab', b: 'Jeep' } }
 console.log(cars[7]); // "Mazda"
 console.log(cars.manyCars); // { a: 'Saab', b: 'Jeep' }
 console.log(cars.manyCars.a); // "Saab"
+
+// Weird property names that are acceptable
+var weirdPropertyNames = {
+  "": "Empty String",
+  "!": "Exclamation Mark",
+  "/": "Backslash"
+}
+console.log(weirdPropertyNames.""); // SyntaxError: Unexpected string
+console.log(weirdPropertyNames[""]); // Empty String
+console.log(weirdPropertyNames.!); // SyntaxError: Unexpected token !
+console.log(weirdPropertyNames["!"]); // Exclamation Mark
