@@ -36,3 +36,10 @@ var car = { myCar: "Saturn", getCar: carTypes("Honda"), special: sales };
 console.log(car.myCar); // Saturn
 console.log(car.getCar); // Honda
 console.log(car.special); // Toyota
+
+// nesting an object inside another, using a numeric/string literal for property name
+var cars = { manyCars: {a: "Saab", "b": "Jeep"}, 7: "Mazda" };
+console.log(cars); // { '7': 'mazda', manyCars: { a: 'Saab', b: 'Jeep' } }
+console.log(cars[7]); // "Mazda"
+console.log(cars.manyCars); // { a: 'Saab', b: 'Jeep' }
+console.log(cars.manyCars.a); // "Saab"
