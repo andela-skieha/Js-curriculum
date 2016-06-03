@@ -19,3 +19,20 @@ myList[0] and myList[2] are 'undefined' */
 var myList2 = ['home', , 'school', ,];
 console.log(myList2[0], myList2[1], myList2[2], myList2[3]); /* myList2 has 4 elements,
 myList2[1] and myList2[3] are 'undefined'. The trailing comma is ignored. */
+
+/* Object Literals
+   List of zero or more pairs of property names and associated values of an object.
+   (More or less like Python's dictionaries, or Ruby's hashes.)
+*/
+var sales = "Toyota";
+function carTypes(name) {
+  if (name === "Honda") {
+    return name;
+  } else {
+    return "Sorry, we dont sell " + name + ".";
+  }
+}
+var car = { myCar: "Saturn", getCar: carTypes("Honda"), special: sales };
+console.log(car.myCar); // Saturn
+console.log(car.getCar); // Honda
+console.log(car.special); // Toyota
