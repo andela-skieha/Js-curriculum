@@ -54,3 +54,14 @@ console.log(weirdPropertyNames.""); // SyntaxError: Unexpected string
 console.log(weirdPropertyNames[""]); // Empty String
 console.log(weirdPropertyNames.!); // SyntaxError: Unexpected token !
 console.log(weirdPropertyNames["!"]); // Exclamation Mark
+
+/* String Literals
+   Zero or more characters enclosed in single (') or double (") quotes.
+   Must be delimited by quotation marks of the same type.
+*/
+// Template literals, similar to string interpolation in Python
+console.log(`This is \n a line feed`);
+// String interpolation
+var name = "Njeri", time = "today";
+console.log(`Hello ${name}, how are you ${time}?`); // Hello Njeri, how are you today?
+console.log("Hello ${name}, how are you ${time}?"); // Hello ${name}, how are you ${time}?
