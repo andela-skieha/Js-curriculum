@@ -1,2 +1,2 @@
-# Js-curriculum-module-1
+# Js-curriculum
 Repo of JS code snippets
