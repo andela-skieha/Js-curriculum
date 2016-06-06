@@ -6,7 +6,7 @@
 var myBooks = {};
 
 // object with items using object literals
-var mango = {
+var orange = {
   color: "yellow",
   shape: "round",
   sweetness: 6,
@@ -14,7 +14,6 @@ var mango = {
     console.log("Good");
   }
 };
-console.log(mango);
 
 // Creating Objects Using the Object Constructor
 var mango = new Object();
@@ -24,4 +23,8 @@ mango.sweetness = 8;
 mango.howSweetAmI = function () {
   console.log("Good");
 };
-console.log(mango);
+
+// finding out if a property exists on an object using the 'in' operator
+console.log("color" in orange); // logs true
+console.log("size" in orange); // logs false
+console.log("toString" in orange); // logs true; orange object inherited the toString method from Object.prototype
