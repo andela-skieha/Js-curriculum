@@ -28,3 +28,7 @@ mango.howSweetAmI = function () {
 console.log("color" in orange); // logs true
 console.log("size" in orange); // logs false
 console.log("toString" in orange); // logs true; orange object inherited the toString method from Object.prototype
+
+// using the 'hasOwnProperty' method to find out if an object has a specific property as its own
+console.log(orange.hasOwnProperty("color")); // logs true
+console.log(orange.hasOwnProperty("toString")); // logs false; toString is not an own property
