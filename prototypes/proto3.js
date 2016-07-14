@@ -11,9 +11,15 @@ var Person = function (firstName) {
 
 }
 
+// class methods
+Person.prototype.sayHello = function () {
+  console.log('Hello, I\'m ' + this.firstName);
+}
+
 // creating a class instance (object)
 var person1 = new Person('Alice');
 var person2 = new Person('Bob');
 
-console.log('person1 is ' + person1.firstName); // person1 is Alice
-console.log('person2 is ' + person2.firstName); // person2 is Bob
+// call the Person sayHello method
+person1.sayHello();
+person2.sayHello();
